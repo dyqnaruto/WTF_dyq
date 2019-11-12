@@ -24,7 +24,7 @@ PATH=<font color="#0000ff">:/usr/local/bin</font>
 
 vi etc/crontab
 PATH末尾增加路径
-==:/usr/local/bin==
+:==:/usr/local/bin==
 ``` shell
 #每小时第0分钟执行以下脚本
 00 * * * * root /bin/bash /root/kill_shell.sh
