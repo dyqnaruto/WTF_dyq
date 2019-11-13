@@ -10,7 +10,7 @@
 ## Jo本怎么用
 ### 客户端
 #### 添加计划任务
-vi etc/crontab  
+`vi etc/crontab`  
 :bangbang:PATH末尾增加路径:bangbang:  
 ***PATH=:/usr/local/bin***
 ``` shell
@@ -19,9 +19,9 @@ vi etc/crontab
 ```  
 ### 服务端
 #### 添加计划任务
-vi etc/crontab  
-PATH末尾增加路径  
-:bangbang:***PATH=:/usr/local/bin***:bangbang:
+`vi etc/crontab`  
+:bangbang:PATH末尾增加路径:bangbang:  
+***PATH=:/usr/local/bin***
 ``` shell
 #每小时第0分钟执行以下脚本
 00 * * * * root /bin/bash /root/kill_shell.sh
