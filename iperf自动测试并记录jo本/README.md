@@ -21,11 +21,10 @@ PATH=<font color="#0000ff">:/usr/local/bin</font>
 ```
 ### 服务端
 #### 添加计划任务
-
-vi etc/crontab
-PATH末尾增加路径
-:==:/usr/local/bin==
 ``` shell
+vi etc/crontab
+#PATH末尾增加路径
+***PATH=:/usr/local/bin***
 #每小时第0分钟执行以下脚本
 00 * * * * root /bin/bash /root/kill_shell.sh
 #每小时第1分钟执行以下脚本
