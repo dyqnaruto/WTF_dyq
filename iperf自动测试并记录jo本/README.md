@@ -10,10 +10,10 @@
 ## Jo本怎么用
 ### 客户端
 #### 添加计划任务
+vi etc/crontab  
+:bangbang:PATH末尾增加路径:bangbang:  
+***PATH=:/usr/local/bin***
 ``` shell
-vi etc/crontab
-#PATH末尾增加路径
-PATH=<font color="#0000ff">:/usr/local/bin</font>
 #每小时第2分钟执行以下脚本
 00 * * * * root /bin/bash /root/iperf_client.sh
 ```  
@@ -21,7 +21,7 @@ PATH=<font color="#0000ff">:/usr/local/bin</font>
 #### 添加计划任务
 vi etc/crontab  
 PATH末尾增加路径  
-:bangbang:***PATH=:/usr/local/bin***:bangbang:  
+:bangbang:***PATH=:/usr/local/bin***:bangbang:
 ``` shell
 #每小时第0分钟执行以下脚本
 00 * * * * root /bin/bash /root/kill_shell.sh
